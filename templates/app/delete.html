@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Events</title>
+</head>
+<body>
+
+	<h3>Siz rostan ham o'chirmoqchimisiz?</h3>
+
+	<form method="POST">
+		{% csrf_token %}
+		<a href="{% url 'home' %}">Cancel</a>
+		<input type="submit" name="del">
+	</form>
+
+</body>
+</html>
